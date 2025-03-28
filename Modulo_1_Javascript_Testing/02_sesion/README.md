@@ -60,7 +60,7 @@ if(intentos === 5){
 
 ## Reflexiones Personales
 
-Esta sesión me ayudó a comprender el uso de la condicional `if` y los ciclos `while` y `for` además de los usos de las variables let y const en algunos procesos como parte de buenas practicas.
+Esta sesión me ayudó a comprender el uso de la condicional `if` y los ciclos `while` y `for` además de los usos de las variables `let` y `const` en algunos procesos como parte de buenas practicas.
 
 ---
 
