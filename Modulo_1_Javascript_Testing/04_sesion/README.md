@@ -1,0 +1,105 @@
+# Sesión 4: Introducción a JavaScript y Testing
+
+## Fecha: 27/03/2025
+
+## Objetivos de la Sesión
+
+ - Definicion de HTML5.
+ - Conocer las distintas etiquetas y sus usos principales.
+
+## Temas Cubiertos
+
+1. **Introducción a HTML y CSS**
+    - Estructura HTML básica.
+	- Uso de etiquetas principales.
+	- Instroducción a CSS y selectores básicos.
+
+## Ejercicios Realizados
+
+### Ejercicio 1: Realizar un sitio web con etiquetas de párrafo, listas ordenadas y no ordenadas, imagenes y enlaces
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Clase 4 de Javascript para aprender</title>
+    </head>
+    <body>
+
+        <div>
+            <h1>Clase 4: HTML Y CSS </h1>
+            <h2>Fundamentos e Introducción</h2>
+            <h3>HTML 5</h3>
+
+            <!--Etiquetas de parrafo-->
+            <p>Cuando hablamos de HTML5 lo primero que tenemos que saber es que es la última versión de la tecnología HTML, cuyas siglas corresponden a "<strong>HyperText Markup Lenguage</strong>", que tiene el siguiente significado: </p>
+            <!--Etiquetas de lista no ordenada-->
+            <ul>
+                <li>
+                    <p>
+                        <strong>HyperText</strong>, cuyo significado es hipertexto, que no es más que un 
+                        <strong>texto que enlaza con otros contenidos</strong>, que pueden ser otro texto u otro archivo
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <strong>Markup</strong>, que significa marca o etiqueta, ya que todas 
+                        <strong>las páginas web están construidas en base a etiquetas</strong>, desde las primeras versiones hasta las últimas etiquetas de HTML5.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <strong>Languaje</strong>, cuyo significado es lenguaje, porque HTML es un lenguaje, es decir, 
+                        <strong>tiene sus normas, tiene su estructura y una serie de convenciones</strong> que nos sirven para definir tanto la estructura como el contenido de una web.
+                    </p>
+                </li>
+            </ul>
+
+
+            <!--Etiquetas de enlaces y lista ordenada-->
+            <ol>
+                <li>
+                    <div>
+                        <a href="https://openwebinars.net/blog/que-es-html5/">Documentación Definición HTML5</a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="./home.html">Ir a mi pagina web</a>
+                    </div>
+                </li>
+            </ol>
+            
+            <!--Etiqueta de imagen-->
+            <div>
+                <h5>HTML5</h5>
+            </div>
+            <img src="https://upanama.educativa.org/archivos/repositorio/6000/6207/html/html_sig.PNG"></img>
+        
+        </div>
+        
+        <script src="./Clase4.js">
+        </script>
+    </body>
+</html>
+```
+## Desafíos Encontrados
+
+- 
+
+## Recursos Adicionales
+
+- [Documentación Definición HTML5](https://openwebinars.net/blog/que-es-html5/)
+
+## Próximos Pasos
+
+- Practicar los de etiquetas y las principales bases para crear un sitio web.
+
+## Reflexiones Personales
+
+Esta sesión me ayudó a comprender el uso de las etiquetas principales de HTML5 y el funcionamiento para realizar un sitio web básico.
+
+---
+
+*Entregable correspondiente a la Clase 4 del Módulo 1: JavaScript Testing*
