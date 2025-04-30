@@ -4,65 +4,50 @@
 
 ## Objetivos de la Sesión
 
-- Uso del RouterOutlet
+- Uso del Input
 
 ## Temas Cubiertos
 
 1. **Fundamentos de Angular**
-   - Uso de las rutas de navegación en Angular
+   - Uso del Input
 
 ## Ejercicios Realizados
 
-### Ejercicio 1: Crear e integrar correctamente 2 o más rutas de navegación con RouterOutlet y RouterLink
+### Ejercicio 1: Crear e integrar correctamente 2 o más elementos que envie datos con la directiva Input
 
 ```typescript
-import { Routes } from '@angular/router';
-import { CardComponent } from './components/card/card.component';
-import { TodoComponent } from './components/todo/todo.component';
-import { ProductManagerComponent } from './components/product-manager/product-manager.component';
-import { HomeComponent } from './page/home/home.component';
-import { ErrorComponent } from './page/error/error.component';
+import { Component, Input } from '@angular/core';
 
-export const routes: Routes = [
-    {
-        path: 'card',
-        component: CardComponent
-    },    
-    {
-        path: 'todo',
-        component: TodoComponent
-    },       
-    {
-        path: 'gestor',
-        component: ProductManagerComponent
-    },  
-    {
-        path: '',
-        component: HomeComponent
-    },  
-    {
-        path: '**',
-        component: ErrorComponent
-    }
-];
-
-
+@Component({
+  selector: 'app-hijo',
+  standalone: true,
+  imports: [],
+  templateUrl: './hijo.component.html',
+  styleUrl: './hijo.component.css'
+})
+export class HijoComponent {
+  @Input() info = {
+    nombre: '',
+    edad: 0,
+    profesion: ''
+  }
+}
 ```
 
 ```html
-<h1>Rutas</h1>
-<app-header></app-header>
-<router-outlet></router-outlet>
+<h1>Componente Padre</h1>
+<p>Aquí vamos a poner un componente hijo</p>
 
-
-<nav>
-    <ul>
-        <li><a routerLink="/">Home</a></li>
-        <li><a routerLink="/card">Card</a></li>
-        <li><a routerLink="/todo">Todo</a></li>
-        <li><a routerLink="/gestor">Gestor</a></li>
-    </ul>
-</nav>
+<div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+    <app-hijo
+    *ngFor="let usuario of usuarios"
+    [info]="usuario"></app-hijo>
+</div>
+<div class="card">
+    <h3>{{info.nombre}}</h3>
+    <p><strong>Edad: </strong>{{info.edad}}</p>
+    <p><strong>Profesion: </strong>{{info.profesion}}</p>
+</div>
 ```
 ## Desafíos Encontrados
 
@@ -74,11 +59,11 @@ export const routes: Routes = [
 
 ## Próximos Pasos
 
-- Aprender el uso del Diseño responsivo.
+- Aprender el uso del Output
 
 ## Reflexiones Personales
 
-Esta sesión me ayudó a conocer la integración del router y la navegación en un sitio web sin la necesidad de recargar la página completa.
+Esta sesión me ayudó a conocer la integración del Input y sus ventajas
 
 ---
 
