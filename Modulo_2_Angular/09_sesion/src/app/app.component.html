@@ -1,0 +1,58 @@
+<!--<app-header></app-header>-->
+
+<!--<h1>Este es el componente principal</h1>
+<h1>{{titulo}} mi nombre es <strong>{{name}}</strong></h1>
+<h3>Soy {{dato}} egresada del {{school}}</h3>
+He desarrollado {{dato2}} páginas en toda mi vida
+<p>Trabajo en {{empresa}}</p>
+<app-saludo></app-saludo>
+<app-tarjeta></app-tarjeta>-->
+
+<!--<h1>Directivas Estructurales</h1>-->
+<!--<h2>ngIf</h2>
+<div class="container">
+  <div *ngIf="isVisible">
+    Este mensaje se muestra si isVisible es true
+  </div>
+  <button (click)="isVisible = !isVisible">Mostrar/Ocultar</button>
+</div> 
+<h2>ngFor</h2>
+<div class="container">
+  <ul>
+    <li *ngFor = "let fruta of frutas; let i = index">
+      {{i+1}} - {{fruta}}
+    </li>
+  </ul>
+</div>-->
+<!--<app-todo></app-todo>-->
+
+<!--<h2>ngSwitch</h2>
+<h3>Panel de Usuario</h3>
+<div [ngSwitch]="rolUsuario">
+  <p *ngSwitchCase="'admin'">Eres Administrador</p>
+  <p *ngSwitchCase="'user'">Eres un Usuario normal</p>
+  <p *ngSwitchCase="'invitado'">Eres un Invitado</p>
+  <p *ngSwitchDefault>Rol no reconocido</p>
+</div>
+
+
+<h2>ngClass</h2>
+<p [ngClass]="{'importante' : tareaImportante}">Esta tarea es importante</p>
+<p [ngStyle]="{color: isUrgente? 'red' : 'green', fontSize: '18px'}">Esta tarea es urgente!</p>-->
+
+<!--<app-product-manager></app-product-manager>-->
+
+<h1>Rutas</h1>
+<nav>
+  <ul>
+    <li><a routerLink="/formulario">Formulario</a></li>
+    <li><a routerLink="/">Proyecto</a></li>
+    <li><a routerLink="/home">Home</a></li>
+    <li><a routerLink="/card">Card</a></li>
+    <li><a routerLink="/todo">Todo</a></li>
+    <li><a routerLink="/gestor">Gestor</a></li>
+    <li><a routerLink="/tarjeta">Tarjeta</a></li>
+    <li><a routerLink="error">Error</a></li>
+  </ul>
+</nav>
+<router-outlet></router-outlet>

@@ -1,0 +1,44 @@
+import { Routes } from '@angular/router';
+import { CardComponent } from './components/card/card.component';
+import { TodoComponent } from './components/todo/todo.component';
+import { ProductManagerComponent } from './components/product-manager/product-manager.component';
+import { HomeComponent } from './page/home/home.component';
+import { ErrorComponent } from './page/error/error.component';
+import { ProductosInfoComponent } from './page/productos-info/productos-info.component';
+import { TarjetaComponent } from './components/tarjeta/tarjeta.component';
+import { FormularioComponent } from './page/formulario/formulario.component';
+
+export const routes: Routes = [
+    {
+        path: 'formulario',
+        component: FormularioComponent
+    },  
+    {
+        path: 'card',
+        component: CardComponent
+    },  
+    {
+        path: 'home',
+        component: HomeComponent
+    },    
+    {
+        path: 'todo',
+        component: TodoComponent
+    },       
+    {
+        path: 'gestor',
+        component: ProductManagerComponent
+    },  
+    {
+        path: 'tarjeta',
+        component: TarjetaComponent
+    },  
+    {
+        path: '',
+        component: ProductosInfoComponent
+    },  
+    {
+        path: '**',
+        component: ErrorComponent
+    }
+];
