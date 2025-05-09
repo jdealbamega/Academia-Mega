@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ededed;
+}
+@font-face {
+    font-family: ZeldaFont;
+    src: url('assets/font/botw.otf');
+}
+
+.zelda-api{
+    font-family: ZeldaFont;
+    background-image: url("assets/img/botw.jpg");
+    background-size: 100% auto;
+}

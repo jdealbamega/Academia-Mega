@@ -1,0 +1,16 @@
+<h1>Clase HTTP-Client</h1>
+<div class="zelda-api" style="text-align: center;">
+    <h1>Criaturas de The Legend of Zelda</h1>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+        <div class="card" *ngFor="let creature of creatures">
+            <img [src]="creature.image" width="200">
+            <div class="card-content">
+                <h3 class="card-title">{{creature.name}}</h3>
+                <p class="card-description">{{creature.description}}</p>
+                <p class="card-description"><strong style="color: #bb9d67;">Ubicaciones: </strong>{{creature.common_locations}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
