@@ -1,0 +1,61 @@
+<div class="container">
+    <h1>Registro de Usuario</h1>
+    <form #formulario="ngForm" (ngSubmit)="onSubmmit()">
+        <!--Nombre-->
+        <div class="form-control">
+            <label for="nombre">Nombre:</label>
+            <input 
+                type="text" 
+                name="nombre" 
+                id="nombre" 
+                [(ngModel)]="usuario.nombre" 
+                required
+                minlength="3"
+                #nombre="ngModel"
+            />
+            <div class="error" *ngIf="nombre.invalid && nombre.touched">
+                El nombre es obligatorio y debe tener al menos 3 caracteres
+            </div>
+        </div>
+        <!--Email-->
+        <div class="form-control">
+            <label for="email">Email:</label>
+            <input 
+                type="email" 
+                name="email" 
+                id="email" 
+                [(ngModel)]="usuario.email" 
+                required
+                #email="ngModel"
+            />
+            <div class="error" *ngIf="email.invalid && email.touched">
+                Ingresa un correo válido
+            </div>
+        </div>
+        <!--Edad-->
+        <div class="form-control">
+            <label for="edad">Edad:</label>
+            <input 
+                type="number" 
+                name="edad" 
+                id="edad" 
+                [(ngModel)]="usuario.edad" 
+                required
+                min="18"
+                #edad="ngModel"
+            />
+            <div class="error" *ngIf="edad.invalid && edad.touched">
+                Debes tener al menos 18 años
+            </div>
+        </div>
+        
+        <button
+        [disabled]="formulario.invalid"
+        type="submit"
+        >Enviar</button>
+    </form>
+    <h1>Datos Actuales</h1>
+    <pre>
+        {{usuario | json}}
+    </pre>
+</div>
