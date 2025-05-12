@@ -1,0 +1,14 @@
+C:\Users\jdealba\Documents\Academia Mega\Curso dotNet\HelloWord\bin\Debug\net9.0\HelloWord.exe
+C:\Users\jdealba\Documents\Academia Mega\Curso dotNet\HelloWord\bin\Debug\net9.0\HelloWord.deps.json
+C:\Users\jdealba\Documents\Academia Mega\Curso dotNet\HelloWord\bin\Debug\net9.0\HelloWord.runtimeconfig.json
+C:\Users\jdealba\Documents\Academia Mega\Curso dotNet\HelloWord\bin\Debug\net9.0\HelloWord.dll
+C:\Users\jdealba\Documents\Academia Mega\Curso dotNet\HelloWord\bin\Debug\net9.0\HelloWord.pdb
+C:\Users\jdealba\Documents\Academia Mega\Curso dotNet\HelloWord\obj\Debug\net9.0\HelloWord.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jdealba\Documents\Academia Mega\Curso dotNet\HelloWord\obj\Debug\net9.0\HelloWord.AssemblyInfoInputs.cache
+C:\Users\jdealba\Documents\Academia Mega\Curso dotNet\HelloWord\obj\Debug\net9.0\HelloWord.AssemblyInfo.cs
+C:\Users\jdealba\Documents\Academia Mega\Curso dotNet\HelloWord\obj\Debug\net9.0\HelloWord.csproj.CoreCompileInputs.cache
+C:\Users\jdealba\Documents\Academia Mega\Curso dotNet\HelloWord\obj\Debug\net9.0\HelloWord.dll
+C:\Users\jdealba\Documents\Academia Mega\Curso dotNet\HelloWord\obj\Debug\net9.0\refint\HelloWord.dll
+C:\Users\jdealba\Documents\Academia Mega\Curso dotNet\HelloWord\obj\Debug\net9.0\HelloWord.pdb
+C:\Users\jdealba\Documents\Academia Mega\Curso dotNet\HelloWord\obj\Debug\net9.0\HelloWord.genruntimeconfig.cache
+C:\Users\jdealba\Documents\Academia Mega\Curso dotNet\HelloWord\obj\Debug\net9.0\ref\HelloWord.dll
