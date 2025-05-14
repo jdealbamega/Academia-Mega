@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "smzZ5s30fYM=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jdealba\\Documents\\Academia Mega\\Curso dotNet\\PrimeraAPI\\PrimeraAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jdealba\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.1\\microsoft.aspnetcore.openapi.9.0.1.nupkg.sha512",
+    "C:\\Users\\jdealba\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
