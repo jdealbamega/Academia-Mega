@@ -1,5 +1,0 @@
-C:\Users\jdealba\Documents\Academia Mega\Curso dotNet\Clase 23\ChatClient\obj\Debug\net9.0\ChatClient.csproj.AssemblyReference.cache
-C:\Users\jdealba\Documents\Academia Mega\Curso dotNet\Clase 23\ChatClient\obj\Debug\net9.0\ChatClient.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\jdealba\Documents\Academia Mega\Curso dotNet\Clase 23\ChatClient\obj\Debug\net9.0\ChatClient.AssemblyInfoInputs.cache
-C:\Users\jdealba\Documents\Academia Mega\Curso dotNet\Clase 23\ChatClient\obj\Debug\net9.0\ChatClient.AssemblyInfo.cs
-C:\Users\jdealba\Documents\Academia Mega\Curso dotNet\Clase 23\ChatClient\obj\Debug\net9.0\ChatClient.csproj.CoreCompileInputs.cache
