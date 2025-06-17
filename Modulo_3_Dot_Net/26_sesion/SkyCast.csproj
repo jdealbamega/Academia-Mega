@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>42d21bff-63ce-4a52-94d9-4ad32a412af1</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="9.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="9.0.1" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="9.0.6" />
+  </ItemGroup>
+  <Target Name="TailWind" BeforeTargets="Build">
+    <Exec Command="dotnet tailwindcss -i Styles/input.css -o wwwroot/css/app.css --minify" />
+  </Target>
+</Project>
