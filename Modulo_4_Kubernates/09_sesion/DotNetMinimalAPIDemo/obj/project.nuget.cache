@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "FI802egE8bw=",
+  "success": true,
+  "projectFilePath": "D:\\Cursos Mega\\Docker\\Clase9\\DotNetMinimalAPIDemo\\DotNetMinimalAPIDemo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\elgonzalezm\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.6\\microsoft.aspnetcore.openapi.9.0.6.nupkg.sha512",
+    "C:\\Users\\elgonzalezm\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
