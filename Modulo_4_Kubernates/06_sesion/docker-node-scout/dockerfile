@@ -1,0 +1,14 @@
+##Construcción del proyecto
+
+#stage Sirve para indicar que  hacer primero y que hacer despues  (como dependencias)
+FROM node:22
+#Destino
+WORKDIR /usr/src/app                
+COPY package*.json ./
+ #Extraera todos los package y los volvera a construir
+RUN npm ci --only=production
+#Todo
+COPY . .
+#Correr en entorno developer
+EXPOSE 3000
+CMD [ "npm", "start" ]
