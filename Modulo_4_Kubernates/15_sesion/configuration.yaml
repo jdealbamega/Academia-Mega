@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: my-config
+data:
+  APP_COLOR: "blue"
+  WELCOME_MSG: "Hello, World!"
+  
