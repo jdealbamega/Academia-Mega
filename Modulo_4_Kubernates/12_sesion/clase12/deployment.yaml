@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: hello-deploy 
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: k8s-hello
+  templates:
+    metadata:
+      labels:
+        app: k8s-hello
+    spec:
+      containers:
+      - name: hello
+        image: jdealba/k8s-hello:latest
+        ports:
+        - containerPort:  3000
+        env:
+        - name: GREETING
+          valueFrom:
+            name: hello-secret
+            key: GREETING
+        - name: API_TOKEN
+          valueFrom:
+            configMapKeyRef:
+              name: hello-config
+              key: API_TOKEN
+            secretKeyRef:
+              name: hello-secret 
+              key: API_TOKEN
+        readinessProve:
+          httpGet:
+            path: /readyz
+            port: 3000
+          initialDelaySeconds: 10
+          periodSeconds: 5
+        livenessProve:
+          httpGet:
+            path: /readyz
+            port: 3000
+          initialDelaySeconds: 15
+          periodSeconds: 10
