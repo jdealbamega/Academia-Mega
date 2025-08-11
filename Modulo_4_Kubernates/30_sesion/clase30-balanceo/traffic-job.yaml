@@ -1,0 +1,25 @@
+apiVersion: batch/v1
+kind:
+metadata:
+  name: traffic-generator
+spec: 
+  completations: 1
+  template:
+    spec:
+      containers:
+        - name: busy
+          image: busybox:1.37
+          command:
+          - sh
+          - -c
+          - |
+            for i in $(seq 1 25); do  
+              wget -qO- http://myapp-svc/ >> 7result/out.txt ;
+            done 
+          volumeMounts:
+          - name: results
+            mountPath: /results
+      restartPolicy: Never
+      volumes:
+      - name: results
+        emptyDir: {}
