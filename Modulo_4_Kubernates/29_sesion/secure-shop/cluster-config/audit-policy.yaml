@@ -1,0 +1,10 @@
+apiVersion: audit.k8s.io/v1
+kind: Policy
+metadata:
+  name: audit-policy
+rules:
+  - level: RequestResponse
+    verbs: ["create", "update", "delete"]
+    resources:
+      - group: ""
+        resources: ["pods", "services", "secrets", "configmaps"]
