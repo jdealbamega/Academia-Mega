@@ -1,0 +1,42 @@
+apiVersion: network.k8s.io/v1
+kind: NetworkPolicy
+metadata: 
+  name: default-deny
+  namespace: secureshop
+spec:
+  podSelector: {}
+  policyTypes: ["Ingress", "Egress"]
+---
+kind: NetworkPolicy
+metadata:
+  name: allow-front-Ingress
+  namespace: secureshop
+spec:
+  podSelector:
+    mathchLabels: { app: fronend }
+  ingress:
+  - port:
+    - protocol: TPC
+      port: 80
+---
+kind: NetworkPolicy
+metadata: 
+  name: backend-egress
+  namespace: secureshop
+spec:
+  podSelector:
+    matchLabels: { app: backend }
+  egress:
+  - to: 
+    - podSelector: { app: postgres }
+      namespace: {}
+    ports:
+    - protocol: TPC
+      port: 5432
+  - to: 
+    - namespaceSelector: {}
+    ports:
+      - protocol: TPC 
+        port: 443
+  policyTypes: ["Egress"]
+
